@@ -1,0 +1,88 @@
+{
+    "CameraTargetMovingStepsToFullFollowing": 250,
+    "MaxPillarsInScene": 3,
+    "PlayerMovingSpeed": 4.0,
+    "CameraBottomLimit": 90.0,
+    "CameraTopLimit": 270.0,
+    "MovingAddForceModifier": 20.0,
+    "InteractionSphereCastRadius": 0.5,
+    "InteractionMaxDistance": 2.0,
+    "BreadThrowingForce": 10.0,
+    "FlashlightInteractionDelay": 1.0,
+    "PillarMinGrowingHeight": 0.05000000074505806,
+    "PillarMaxGrowingHeight": 1.0,
+    "PillarMinLength": 0.5,
+    "PillarMaxLength": 1.5,
+    "PillarMinWidth": 0.5,
+    "PillarMaxWidth": 1.5,
+    "PillarGrowingStep": 0.019999999552965165,
+    "BreadRespawnCheckHeight": 1.5,
+    "CutsceneImageShowingTime": 1.0,
+    "UICreateButtonDelay": 1.0,
+    "EndGameDistance": 15.0,
+    "BreadThrowingDispersion": {
+        "x": 60.0,
+        "y": 60.0
+    },
+    "BreadRespawnArea": {
+        "x": 6.0,
+        "y": 6.0
+    },
+    "CameraDefaultRotationOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "CameraLocalPositionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "CameraGlobalPositionOffset": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": 0.0
+    },
+    "BreadHandlingPositionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "BreadHandlingRotationOffset": {
+        "x": 0.0,
+        "y": 90.0,
+        "z": 0.0
+    },
+    "CupHandlingPositionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "CupHandlingRotationOffset": {
+        "x": 0.0,
+        "y": 270.0,
+        "z": 0.0
+    },
+    "FlashlightHandlingPositionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "FlashlightHandlingRotationOffset": {
+        "x": -90.0,
+        "y": -90.0,
+        "z": -90.0
+    },
+    "PenHandlingPositionOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "PenHandlingRotationOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "InversionMode": 0,
+    "InversionOnCardInteractMode": 2
+}
