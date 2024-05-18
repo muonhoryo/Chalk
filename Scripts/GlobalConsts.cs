@@ -31,6 +31,7 @@ namespace Chalk
             public float CutsceneImageShowingTime;
             public float UICreateButtonDelay;
             public float EndGameDistance;
+            public float MusicTransitionSpeed;
 
             public Vector2 BreadThrowingDispersion;
             public Vector2 BreadRespawnArea;
@@ -72,6 +73,7 @@ namespace Chalk
                 float CutsceneImageShowingTime,
                 float UICreateButtonDelay,
                 float EndGameDistance,
+                float MusicTransitionSpeed,
                 Vector2 BreadThrowingDispersion,
                 Vector2 BreadRespawnArea,
                 Vector3 CameraDefaultRotationOffset,
@@ -110,6 +112,7 @@ namespace Chalk
                 this.CutsceneImageShowingTime = CutsceneImageShowingTime;
                 this.UICreateButtonDelay = UICreateButtonDelay;
                 this.EndGameDistance = EndGameDistance;
+                this.MusicTransitionSpeed = MusicTransitionSpeed;
 
                 this.BreadThrowingDispersion = BreadThrowingDispersion;
                 this.BreadRespawnArea = BreadRespawnArea;

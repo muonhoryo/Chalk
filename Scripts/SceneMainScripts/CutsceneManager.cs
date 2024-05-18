@@ -16,7 +16,7 @@ namespace Chalk.Cutscenes
 
         public readonly struct Cutscene
         {
-            public Cutscene(int Index,Sprite Icon , Sprite SelectedIcon, Sprite[] SceneImages)
+            public Cutscene(int Index,Sprite Icon , Sprite SelectedIcon, Sprite[] SceneImages,AudioClip PlayedMusic)
             {
                 if (Index < 0)
                     throw new ArgumentException("Index must be more than or equal 0.");
@@ -26,17 +26,21 @@ namespace Chalk.Cutscenes
                     throw new ArgumentNullException("Missing Icon.");
                 if (SelectedIcon == null)
                     throw new ArgumentNullException("Missing SelectedIcon.");
+                if (PlayedMusic == null)
+                    throw new ArgumentNullException("Missing PlayedMusic.");
 
                 this.Index = Index;
                 this.SceneImages = SceneImages;
                 this.Icon = Icon;
                 this.SelectedIcon = SelectedIcon;
+                this.PlayedMusic = PlayedMusic;
             }
 
             public readonly int Index;
             public readonly Sprite[] SceneImages;
             public readonly Sprite Icon;
             public readonly Sprite SelectedIcon;
+            public readonly AudioClip PlayedMusic;
         }
 
         private SortedList<int, Cutscene> CutscenesList = new SortedList<int, Cutscene>();

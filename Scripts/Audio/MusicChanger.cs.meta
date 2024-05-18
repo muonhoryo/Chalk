@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 14d23df6190e10c4c81d22373bc87050
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MusicSource: {instanceID: 0}
+  - MusicRemainderPrefab: {fileID: 3426630832356764668, guid: 400d24cbb505573428fc2cbf265c2bb4, type: 3}
+  - FadingSpeedProvider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

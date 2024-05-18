@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections;
+using AIAD;
 using Chalk.Player;
 using MuonhoryoLibrary.Unity.COM;
 using UnityEngine;
@@ -18,6 +19,7 @@ namespace Chalk.Cutscenes
         public event Action ShowingSceneDoneEvent = delegate { };
 
         [SerializeField] private Image ImageShower;
+        [SerializeField] private MusicChanger MusicChanger;
 
         [SerializeField] private MonoBehaviour ShowingImageTimeProvider;
 
@@ -46,6 +48,14 @@ namespace Chalk.Cutscenes
             gameObject.SetActive(true);
             StartCoroutine(ShowImages(showedScene));
             StartShowingSceneEvent(showedScene);
+            AudioClip clip = MusicChanger.PlayedMusic_;
+            void ResetMusic()
+            {
+                MusicChanger.SetMusic(clip);
+                ShowingSceneDoneEvent -= ResetMusic;
+            }
+            ShowingSceneDoneEvent += ResetMusic;
+            MusicChanger.SetMusic(showedScene.PlayedMusic);
         }
 
         private IEnumerator ShowImages(CutsceneManager.Cutscene showedScene)

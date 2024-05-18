@@ -13,6 +13,8 @@ namespace Chalk
 
         [SerializeField] private GameObject PillarPrefab;
         [SerializeField] private CameraTargetFollowingRotationModule FollowingModule;
+        [SerializeField] private GameObject SoundPlayerPrefab;
+        [SerializeField] private AudioClip Sound;
 
         private bool IsThrown = false;
 
@@ -46,6 +48,11 @@ namespace Chalk
                         InteractionDoneEvent();
                     }
                     pill.GrowingDoneEvent += InteractionDone;
+
+                    var soundPlayer = GameObject.Instantiate(SoundPlayerPrefab).GetComponent<OneShotSoundPlayer>();
+                    soundPlayer.transform.position = transform.position;
+                    soundPlayer.transform.parent = transform;
+                    soundPlayer.PlaySound(Sound);
                 }
             }
         }

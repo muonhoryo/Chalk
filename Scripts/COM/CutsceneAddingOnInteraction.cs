@@ -1,5 +1,6 @@
 
 
+using AIAD;
 using Chalk.Cutscenes;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ namespace Chalk.Cutscenes
         [SerializeField] private Sprite CutsceneIcon;
         [SerializeField] private Sprite CutsceeSelectedIcon;
         [SerializeField] private MonoBehaviour InteractiveObject;
+        [SerializeField] private AudioClip PlayedMusic;
 
         private IInteractiveObject ParsedInteractiveObject;
         
@@ -27,7 +29,7 @@ namespace Chalk.Cutscenes
         private void InteractionDone()
         {
             ParsedInteractiveObject.InteractionDoneEvent -= InteractionDone;
-            CutsceneManager.inst_.AddCutscene(new CutsceneManager.Cutscene(CutsceneIndex,CutsceneIcon,CutsceeSelectedIcon,Sprites));
+            CutsceneManager.inst_.AddCutscene(new CutsceneManager.Cutscene(CutsceneIndex,CutsceneIcon,CutsceeSelectedIcon,Sprites,PlayedMusic));
         }
     }
 }

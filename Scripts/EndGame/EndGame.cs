@@ -14,6 +14,7 @@ namespace Chalk
         [SerializeField] private MonoBehaviour EndGameDistanceProvider;
         [SerializeField] private Transform TrackedObject;
         [SerializeField] private GameObject EndGameDialog;
+        [SerializeField] private GameObject GUI;
 
         private IConstProvider<float> ParsedEndGameDistanceProvider;
 
@@ -34,6 +35,7 @@ namespace Chalk
             PlayerController.instance_.IsActive_ = false;
             Cursor.visible = true;
             EndGameDialog.SetActive(true);
+            GUI.SetActive(false);
             EndGameEvent();
         }
     }

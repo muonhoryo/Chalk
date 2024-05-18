@@ -52,6 +52,8 @@ namespace Chalk
             PillarsInScene.AddLast(this);
             if (PillarsInScene.Count_ > GlobalConsts.inst_.MaxPillarsInScene)
                 PillarsInScene[PillarsInScene.Count_ - GlobalConsts.inst_.MaxPillarsInScene-1].RemoveSmoothly();
+
+            GrowingDoneEvent += () => GetComponentInChildren<AudioSource>().Stop();
             //Remove old pillars
         }
         private void Start()
