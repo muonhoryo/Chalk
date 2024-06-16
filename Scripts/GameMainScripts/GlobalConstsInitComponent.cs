@@ -31,6 +31,7 @@ namespace Chalk.Initialization
         [SerializeField][Range(0, 100)] private float UICreateButtonDelay;
         [SerializeField][Range(0, 10000)] private float EndGameDistance;
         [SerializeField][Range(0, 1)] private float MusicTransitionSpeed;
+        [SerializeField][Range(0, 100)] private float SceneShowingDelay;
 
         [SerializeField] private Vector2 BreadThrowingDispersion;
         [SerializeField] private Vector2 BreadRespawnArea;
@@ -83,6 +84,7 @@ namespace Chalk.Initialization
                 UICreateButtonDelay: UICreateButtonDelay,
                 EndGameDistance: EndGameDistance,
                 MusicTransitionSpeed: MusicTransitionSpeed,
+                SceneShowingDelay: SceneShowingDelay,
 
                 BreadThrowingDispersion: BreadThrowingDispersion,
                 BreadRespawnArea: BreadRespawnArea,

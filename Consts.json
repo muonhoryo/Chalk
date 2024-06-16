@@ -21,6 +21,7 @@
     "UICreateButtonDelay": 1.0,
     "EndGameDistance": 15.0,
     "MusicTransitionSpeed": 0.009999999776482582,
+    "SceneShowingDelay": 2.0,
     "BreadThrowingDispersion": {
         "x": 60.0,
         "y": 60.0
